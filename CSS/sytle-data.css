@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppisns", sans-serif;
+}
+
+body{
+    background: linear-gradient(to bottom right, #f8fbff, #ffffff);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== NAVBAR ===== */
+header{
+    background-color: #2563eb;
+    padding: 1rem 2rem;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    width: 50px;    /* sedikit lebih besar agar proposional */
+    height: 50px;    /* pastikan tinggi sama dengan lebar */
+    border-radius: 50%;
+    object-fit: cover;   /* agar gambar tidak terdistorsi */
+}
+
+.brand{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1;  /* hapus jarak vertikal default h2 */
+    margin: 0;    /* hapus margin default h2 */
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active{
+    color: #a5d8ff;
+    border-bottom: 2px solid #a5d8ff;
+}
+
+
+/* ===== MAIN CONTENT ===== */
+.container{
+    flex: 1;
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    animation: fadeIn 0.6s ease;
+}
+
+h2{
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 1.5rem;
+}
+
+.table-container{
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border-bottom: 1px solid #cbd5e1;
+    padding: 0.9rem;
+    text-align: center;
+}
+
+th{
+    background-color: #2563eb;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+tr:hover{
+    background-color: #e2e8f0;
+    transition: background 0.3s;
+}
+
+/* Status Lulus / Tidak Lulus */
+td.status-lulus{
+    font-weight: 600;
+    color: #10b981; /* Hijau */
+}
+
+td.status-tidak{
+    font-weight: 600;
+    color: #ef4444; /* Merah */
+}
+
+
+/* ===== BUTTON ===== */
+.btn-hapus{
+    display: block;
+    margin: 1.5rem auto 0;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-hapus:hover{
+    background-color: #dc2626;
+    transform: scale(1.05);
+}
+
+
+/* ===== NOTIFIKASI ===== */
+.notif{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #10b981;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: fadeInOut 2.5s forwards;
+    font-weight: 500;
+}
+
+@keyframes fadeInOut{
+    0% { opacity: 0; transform: translateY(-10px);}
+    10%, 90% { opacity: 1; transform: translateY(0);}
+    100% { opacity: 0; transform: translateY(-10px);}
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}

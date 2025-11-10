@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Aplikasi E-Report</title>
+  <link rel="stylesheet" href="css/style-tentang.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+          <div class="nav-left">
+            <img src="assets/logoperusahaan.png" alt="Logo" class="logo">
+            <h2 class="brand">IDN Boarding School</h2>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="input.html">Input</a></li>
+            <li><a href="data.html">Data</a></li>
+            <li><a href="filter.html">Filter</a></li>
+            <li><a href="statistik.html">Statistik</a></li>
+            <li><a href="pengumuman.html">Pengumuman</a></li>
+            <li><a href="tentang.html" class="active">Tentang</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <!-- Section About -->
+  <section class="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h1>Tentang E-Report</h1>
+        <p>
+          <strong>E-Report</strong> adalah aplikasi berbasis web yang dirancang untuk mempermudah pengelolaan, pelaporan, 
+          dan analisis data siswa secara digital. Dengan tampilan yang interaktif dan sistem yang responsif, 
+          E-Report membantu siswa dan guru dalam menginput, memantau, serta mencetak laporan secara efisien.
+        </p>
+        <p>
+          Aplikasi ini dibangun menggunakan kombinasi teknologi web dasar yaitu 
+          <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, dan <span class="highlight">JavaScript</span>, 
+          sehingga mudah dipelajari dan dikembangkan lebih lanjut oleh siswa SMK RPL.
+        </p>
+        <button id="btnTeam" class="btn">Lihat Tim Pengembang</button>
+      </div>
+
+      <div class="about-image">
+        <img src="assets/orang1.png" alt="About Illustration">
+      </div>
+    </div>
+
+    <!-- Section Tim -->
+    <div class="team" id="teamSection">
+      <h2>Tim Pengembang</h2>
+      <div class="team-cards" id="teamCards"></div>
+    </div>
+  </section>
+
+  <script src="js/tentang.js" defer></script>
+</body>
+</html>

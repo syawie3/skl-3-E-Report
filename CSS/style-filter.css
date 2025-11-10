@@ -1,0 +1,130 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; }
+
+body {
+  background: linear-gradient(to bottom right, #f8fbff, #ffffff);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== NAVBAR ===== */
+header {
+    background-color: #2563eb;
+    padding: 1rem 2rem;
+  }
+  
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+.logo {
+    width: 50px;        /* sedikit lebih besar agar proporsional */
+    height: 50px;       /* pastikan tinggi sama dengan lebar */
+    border-radius: 50%;
+    object-fit: cover;  /* agar gambar tidak terdistorsi */
+  }
+  
+.brand {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1;     /* hapus jarak vertikal default h2 */
+    margin: 0;          /* hapus margin default h2 */
+  }
+  
+.navbar { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+  }
+  
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+  
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+  
+.nav-links a:hover, .nav-links a.active {
+    color: #a5d8ff;
+    border-bottom: 2px solid #a5d8ff;
+}
+
+/* ===== MAIN CONTENT ===== */
+.container {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+}
+
+#filterInput {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+#filterInput:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37,99,235,0.3);
+  outline: none;
+}
+
+.table-container { overflow-x: auto; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+th, td {
+  border-bottom: 1px solid #cbd5e1;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+th {
+  background-color: #2563eb;
+  color: white;
+}
+
+tr:nth-child(even) { background-color: #f1f5f9; }
+tr:hover { background-color: #e2e8f0; transition: background 0.3s; }
+
+/* Status Lulus / Tidak Lulus */
+td.status-lulus { font-weight: 600; color: #10b981; }
+td.status-tidak { font-weight: 600; color: #ef4444; }
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}

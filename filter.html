@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Data | E-Report</title>
+    <link rel="stylesheet" href="css/style-filter.css">
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="assets/logoperusahaan.png" alt="logo" class="logo">
+                <h2 class="brand">IDN Boarding School</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="input.html">Input</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="filter.html" class="active">Filter</a></li>
+                <li><a href="statistik.html">Statistik</a></li>
+                <li><a href="pengumuman.html">Pengumuman</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Filter Data Berdasarkan Kelas:</h2>
+        <input type="text" id="filterInput" placeholder="Masukkan nama kelas (contoh: XI RPL 1)">
+        <div class="table-container">
+            <table id="hasilFilter">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Kelas</th>
+                        <th>Mata Pelajaran</th>
+                        <th>Nilai</th>
+                        <th>Status</th>
+                        <th>Tanggal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 E-Report | Rekayasa Perangkat Lunak</p>
+    </footer>
+
+    <script src="js/filter.js"></script>
+</body>
+</html>

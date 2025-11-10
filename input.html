@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data | E-Report</title>
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="CSS/style-input.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="assets/logoperusahaan.png" alt="Logo" class="logo">
+                <h2 class="brand">IDN Boarding School</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="input.html" class="active">Input</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="filter">Filter</a></li>
+                <li><a href="statistik">Statistik</a></li>
+                <li><a href="pengumuman.html">Pengumuman</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container fade-in">
+        <h2 class="title">📝 Form input Laporan Nilai Siswa</h2>
+        <form id="laporanForm" class="form-box">
+            <div class="form-group">
+                <label for="nama">Nama Siswa:</label>
+                <input type="text" id="nama" placeholder="Masukan nama siswa..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="kelas">Kelas:</label>
+                <input type="text" id="kelas" placeholder="Masukan kelas..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="judul">Mata Pelajaran:</label>
+                <input type="text" id="judul" placeholder="Masukan mata pelajaran..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="nilai">Nilai:</label>
+                <input type="number" id="nilai" placeholder="Masukan nilai (0-100)" min="0" max="100" required>
+            </div>
+
+            <button type="submit" class="btn-primary">📓 Simpan Laporan</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&COPY; 2025 E-Report | Rekayasa Perangkat Lunak</p>
+    </footer>
+
+    
+    <!-- ===== JavaScript ===== -->
+    <script src="JS/input.js" defer></script>
+
+</body>
+</html>
