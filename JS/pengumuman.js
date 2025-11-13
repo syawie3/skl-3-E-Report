@@ -11,7 +11,7 @@ const container = document.getElementById("announcementContainer");
 
 // Buat card pengumuman
 announcements.forEach((item, index) => {
-  const card = document.createElement('div');
+  const card = document.createElement("div");
   card.classList.add("announcement-card");
   card.innerHTML = `<h4>${item.title}</h4><p>${item.desc}</p>`;
   container.appendChild(card);
